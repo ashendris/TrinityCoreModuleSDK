@@ -240,9 +240,9 @@ The companion repository contains working examples:
 - `mod-example` consumes that service and registers a command;
 - both use external SDK headers only.
 
-Repository: [TrinityCoreModulesExamples](https://github.com/TrinityCore/TrinityCoreModulesExamples)
+Repository: [TrinityCoreModulesExamples](https://github.com/julienguillot77/TrinityCoreModulesExamples)
 
-End-to-end guide: [DEVELOPMENT.md](https://github.com/TrinityCore/TrinityCoreModulesExamples/blob/master/DEVELOPMENT.md)
+End-to-end guide: [DEVELOPMENT.md](https://github.com/julienguillot77/TrinityCoreModuleSDK/blob/master/DEVELOPMENT.md)
 
 ## Current support boundary
 
