@@ -15,6 +15,14 @@ The workflow is:
 
 The current module API is stable C ABI v1. Modules use SDK-owned C-compatible tables and opaque handles. Native modules are trusted in-process code: a loaded module has the privileges of `worldserver`. Signatures provide publisher authenticity and package integrity; they do not sandbox native code.
 
+## TrinityCore source compatibility
+
+The current TrinityCore module host and runtime are developed on the `feature/plugin-system` branch of the TrinityCore repository. Build the target `worldserver` from that branch, or from a later compatible revision, when developing and testing modules from this SDK.
+
+The SDK, module, and server MUST use compatible ABI and package revisions. Do not mix a module built for `feature/plugin-system` with an unrelated `master` or `forever` worldserver unless compatibility has been explicitly verified. Rebuild the module after an incompatible TrinityCore or SDK change.
+
+The SDK remains an external package: modules MUST link only against the public SDK package and MUST NOT depend on TrinityCore implementation targets such as `game` or `worldserver`.
+
 ## 1. Requirements
 
 ### Build tools
